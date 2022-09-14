@@ -1,0 +1,128 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #035303;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .piano {
+    display: flex;
+  }
+  
+  .key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+  }
+  
+  .white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+  }
+  
+  .white.active {
+    background-color: #CCC;
+  }
+  
+  .black {
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+  }
+  
+  .black.active {
+    background-color: #333;
+  }
+  
+@media all and (min-width: 1441px) {
+	.white{
+      --width: 150px;
+    }
+
+    .black{
+      --width: 90px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+	.white{
+      --width: 200px;
+    }
+
+    .black{
+      --width: 120px;
+    }
+}
+
+@media all and (max-width: 1599px) and (min-width: 1025px) {
+	.white{
+      --width: 130px;
+    }
+
+    .black{
+      --width: 78px;
+    }
+}
+
+@media all and (max-width: 767px) {
+	.white{
+      --width: 80px;
+    }
+
+    .black{
+      --width: 48px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .piano{
+      transform: rotate(270deg);
+    }
+
+    .white{
+      --width: 83.3px;
+    }
+
+    .black{
+      --width: 50px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .piano{
+      transform: rotate(270deg);
+    }
+
+    .white{
+      --width: 66.6px;
+    }
+
+    .black{
+      --width: 40px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .piano{
+      transform: rotate(270deg);
+    }
+
+    .white{
+      --width: 50px;
+    }
+
+    .black{
+      --width: 30px;
+    }
+}
+
+
+  
