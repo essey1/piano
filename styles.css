@@ -115,11 +115,11 @@
   @media all and (max-width: 800px) {
 
     .white{
-        --width: 100px;
+        --width: 98px;
       }
   
       .black{
-        --width: 60px;
+        --width: 59px;
       }
   }
   
